@@ -6,10 +6,12 @@
 
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
+	using std::cout;
+	using std::cin;
+	using std::endl;
+
 	cout << "Hey, how's it going?" << endl;
 
 	cin.get();
