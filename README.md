@@ -1,1 +1,1 @@
-Samples are separated by branch.
+This is for design pattern practice and testing of modern C++ features.
