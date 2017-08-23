@@ -1,7 +1,7 @@
 .vs/*
 Debug/*
 Release/*
-Sample.VC.opendb
-Sample.sdf
-Sample/Debug/*
-Sample/Release/*
+*/Debug/*
+*/Release/*
+*.VC.opendb
+*.sdf
