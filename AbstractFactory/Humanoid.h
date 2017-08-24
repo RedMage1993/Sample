@@ -17,8 +17,8 @@ public:
 	bool detachHand(Hand::HandSide side);
 
 private:
-	Hand *leftHand;
-	Hand *rightHand;
+	Hand *m_leftHand;
+	Hand *m_rightHand;
 
 	void deleteHand(Hand*&);
 };

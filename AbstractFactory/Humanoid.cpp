@@ -16,10 +16,10 @@ bool Humanoid::attachHand(Hand* const hand)
 {
 	switch (hand->getHandSide()) {
 	case Hand::Left:
-		this->leftHand = hand;
+		this->m_leftHand = hand;
 		break;
 	case Hand::Right:
-		this->rightHand = hand;
+		this->m_rightHand = hand;
 		break;
 	default:
 		return false;
@@ -38,10 +38,10 @@ void Humanoid::deleteHand(Hand* &hand) {
 bool Humanoid::detachHand(Hand::HandSide side) {
 	switch (side) {
 	case Hand::Left:
-		deleteHand(this->leftHand);
+		deleteHand(this->m_leftHand);
 		break;
 	case Hand::Right:
-		deleteHand(this->rightHand);
+		deleteHand(this->m_rightHand);
 		break;
 	default:
 		return false;
