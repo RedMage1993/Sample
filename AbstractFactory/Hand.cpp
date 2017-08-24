@@ -5,28 +5,22 @@
 
 #include "Hand.h"
 
-Hand::Hand() {
-	this->side = static_cast<HandSide> (-1);
-	this->size = Medium;
-}
+Hand::Hand() : m_side(static_cast<HandSide> (-1)), m_size(Medium) {}
 
-Hand::Hand(HandSide side, HandSize size) {
-	this->size = size;
-	this->side = side;
-}
+Hand::Hand(HandSide side, HandSize size) : m_size(size), m_side(side) {}
 
 Hand::HandSide Hand::getHandSide() {
-	return this->side;
+	return this->m_side;
 }
 
 Hand::HandSize Hand::getHandSize() {
-	return this->size;
+	return this->m_size;
 }
 
 void Hand::setHandSide(HandSide side) {
-	this->side = side;
+	this->m_side = side;
 }
 
 void Hand::setHandSize(HandSize size) {
-	this->size = size;
+	this->m_size = size;
 }

@@ -20,6 +20,6 @@ public:
 	void setHandSize(HandSize);
 
 private:
-	HandSide side;
-	HandSize size;
+	HandSide m_side;
+	HandSize m_size;
 };
