@@ -5,3 +5,4 @@ Release/*
 */Release/*
 *.VC.opendb
 *.sdf
+*.db
